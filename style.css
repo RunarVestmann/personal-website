@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(142, 157, 165);
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url("img/laptop-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo-container{
+    display: inline-block;
+    padding-top: 30vh;
+    padding-left: 10vw;
+}
+
+#text-logo{
+    font-size: 5rem;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+#logo-description{
+    font-size: 1.7rem;
+    color: rgb(142, 157, 165);
+}
+
+#home-icons{
+    margin-top: 1rem;
+    padding-left: 10vw;
+}
+
+.icons a{
+    padding: 0.5rem;
+    text-decoration: none;
+    color :white;
+}
+
+.icons a:hover, 
+.menu-item:hover,
+.link:hover
+{
+    opacity: 0.7;
+}
+
+#menu-button{
+    position:fixed;
+    right:2rem;
+    top:2rem;
+    color: inherit;
+}
+
+#menu-container{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    top: 30vh;
+    align-items: center;
+    align-content: center;
+}
+
+.menu-item{
+    cursor: pointer;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: rgb(224, 227, 230);;
+}
+
+#description-button,
+#menu-button,
+.menu-item{
+    cursor: pointer;
+    border: none;
+    outline: inherit;
+    background: transparent;
+}
+
+#projects,
+#about,
+#contact{
+    display: none;
+}
+
+.content-container{
+    display: inline-block;
+    padding-top: 30vh;
+    padding-left: 10vw;
+}
+
+#about-container{
+    display: flex;
+}
+
+.content-container h2{
+    color: white;
+    font-size: 3rem;
+}
+
+#about img{
+    height: 8rem;
+    margin-top: .5rem;
+    border-radius: 50%;
+    float: left;
+}
+
+#about-text{
+    display: inline-block;
+    margin-left: 0.5rem;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 1rem;
+    padding: 1rem;
+    padding-top: 0;
+    width: 60%;
+}
+
+#about p{
+    color: rgb(231, 226, 226);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.emphasis{
+    font-weight: bold;
+    color: #b66a0c;
+}
+
+.link{
+    text-decoration: none;
+    color: #b66a0c;
+}

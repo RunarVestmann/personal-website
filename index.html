@@ -3,28 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <meta name="author" content="Rúnar Vestmann">
+    <title>Rúnar Vestmann Homepage</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h4 class="logo"><a href="index.html">Rúnar Vestmann</a></h4>
-        <nav class>
-            <ul class="header-nav-links">
-                <li ><a class="nav-link" href="projects.html">Projects</a></li >
-                <li ><a class="nav-link" href="about.html">About</a></li>
-                <li ><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <main id="main-section">
+        <div id="home">
+            <div id="logo-container">
+                <h1 id="text-logo">Rúnar <span class="emphasis">Vestmann</span></h1>
+                <button id="description-button" onclick="generateDescription()">
+                    <p id="logo-description">Aspiring Programmer, CS Student & Creator</p>
+                </button>   
+            </div>  
+    
+            <div id="home-icons" class="icons">
+                <a class="fa fa-linkedin fa-4x" href="https://is.linkedin.com/in/r%C3%BAnar-vestmann-a7229a19b" target="_blank"></a>
+                <a class="fa fa-github fa-4x" href="https://github.com/runarvestmann" target="_blank"></a>
+            </div>
+        </div>
 
-    <main>
+        <div id="projects" class="content-container">
+            <h2>Projects</h2>
+            <p style="margin: 1rem 0; font-size: 1.5rem;">I've got a few projects on github and itch.io for you to check out.</p>
+                <div class="icons">
+                    <a href="https://github.com/runarvestmann" class="fa fa-github fa-4x" target="_blank"></a>
+                    <a href="https://runarvestmann.itch.io/" target="_blank"><img style="width: 12vw"  src="img/itch-logo.svg" alt="itch-logo"></a>
+                </div>
+        </div>
 
+        <div id="about" class="content-container">
+            <h2>About</h2>
+            <div id="about-container">
+                <img src="img/rv.jpg" alt="picture-of-author">
+                <div id="about-text">
+                    <p>Hi there! My <span class="emphasis">name</span> is <span class="emphasis">Rúnar Vestmann</span> and I am an aspiring software developer
+                        at the <span class="emphasis">age</span> of <span class="emphasis">21</span> that's <span class="emphasis">studying</span> <span class="emphasis">Computer Science</span> 
+                        at Reykjavík University in Iceland.</p> 
+                        <p>I'm <span class="emphasis">looking for a software development job</span> over the summer and perhaps a part time job during the school months.</p>
+                        <p>I started out making programs to run on embedded systems and later on made a few games in <span class="emphasis">Unity</span> alongside <span class="emphasis">learning</span> web development 
+                            and what I thought interesting <span class="emphasis">on my own</span>.</p>
+                        <p>As of right now I am studying Computer Science to be able to <span class="emphasis">meet other developers</span>, <span class="emphasis">work in a team</span> and get a better understanding of 
+                        software development in general.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="content-container">
+            <h2>Contact</h2>
+            <p style="margin-top: 1rem; font-size: 2rem;">Feel free to send me an e-mail at 
+               <a class="link" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#117;&#110;&#97;&#114;&#118;&#101;&#115;&#116;&#109;&#97;&#110;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">
+               &#114;&#117;&#110;&#97;&#114;&#118;&#101;&#115;&#116;&#109;&#97;&#110;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></p>
+        </div>
 
     </main>
 
+    <button id="menu-button" class="fa fa-bars fa-4x" onclick="toggleMenu()"></button>
 
+    <div id="menu-container">
+        <button class="menu-item" onclick="showHomePage()">Home</button>
+        <button class="menu-item" onclick="showProjectsPage()">Projects</button>
+        <button class="menu-item" onclick="showAboutPage()">About</button>
+        <button class="menu-item" onclick="showContactPage()">Contact</button>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
