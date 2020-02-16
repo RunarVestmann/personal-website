@@ -9,6 +9,7 @@ let currentDisplay = home;
 
 const description = document.getElementById("logo-description");
 const descriptionOptions = [
+    "Aspiring Programmer, CS Student & Creator",
     "Just some guy", 
     "Fellow dreamer",
     "Icelander",
@@ -72,15 +73,12 @@ function showContactPage(){
 }
 
 function changeDisplay(newDisplay){
-
     if(currentDisplay === newDisplay){
         closeMenu();
         return;
     }
-
     currentDisplay.style.display = "none";
     newDisplay.style.display = "block";
     currentDisplay = newDisplay;
     closeMenu();
 }
-
