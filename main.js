@@ -3,6 +3,9 @@ const mainSection = document.getElementById("main-section");
 const menuButton = document.getElementById("menu-button");
 const menu = document.getElementById("menu");
 
+const age = document.getElementById("age");
+age.textContent = calculateAge("06/26/1998")
+
 const home = document.getElementById("home");
 const projects = document.getElementById("projects");
 const about = document.getElementById("about");
@@ -22,6 +25,20 @@ function handleRefresh(){
             changeDisplay(section);
         });
     }
+}
+
+function calculateAge (birthDate) {
+    birthDate = new Date(birthDate);
+    otherDate = new Date(Date.now());
+
+    var years = (otherDate.getFullYear() - birthDate.getFullYear());
+
+    if (otherDate.getMonth() < birthDate.getMonth() || 
+        otherDate.getMonth() == birthDate.getMonth() && otherDate.getDate() < birthDate.getDate()) {
+        years--;
+    }
+
+    return years;
 }
 
 function toggleMenu(){   
